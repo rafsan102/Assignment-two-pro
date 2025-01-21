@@ -72,6 +72,14 @@ a {
   /* border: 2px solid tomato; */
   margin: 20px;
 }
+@media screen and (max-width: 576px) {
+  .container-hero {
+    flex-direction: column-reverse;
+  }
+  .boy-container {
+    text-align: center;
+  }
+}
 .container-hero img {
   width: 100%;
 }
@@ -84,6 +92,11 @@ a {
 }
 .container-boss {
   display: flex;
+}
+@media screen and (max-width: 576px) {
+  .container-boss {
+    flex-direction: column;
+  }
 }
 .head {
   text-align: center;
@@ -236,7 +249,7 @@ a {
   .store-story1 {
     display: none;
   }
-  .store-story2 {
+  /* .store-story2 {
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
 }
