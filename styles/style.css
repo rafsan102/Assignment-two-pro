@@ -1,0 +1,47 @@
+.header-section {
+  border: 2px solid rebeccapurple;
+  height: 100%;
+}
+.title {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-around;
+}
+.nav-container {
+  display: flex;
+}
+.nav-container div {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+.btn {
+  background-color: rgb(254, 163, 1);
+  border-radius: 12px;
+  height: 40px;
+  width: 100px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+li {
+  list-style-type: none;
+  gap: 10px;
+}
+a {
+  text-decoration: none;
+}
+.one {
+  color: rgb(254, 163, 1);
+}
+.two {
+  color: rgb(1, 172, 253);
+}
+.three {
+  color: rgb(5, 212, 223);
+}
+.four {
+  color: rgb(93, 88, 239);
+}
+.boy-container {
+  display: flex;
+}
