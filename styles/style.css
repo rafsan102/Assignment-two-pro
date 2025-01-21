@@ -79,6 +79,14 @@ a {
   .boy-container {
     text-align: center;
   }
+  .nav-container .item,
+  .btn,
+  h3 {
+    display: none;
+  }
+  .btn {
+    background-image: url(../assets/menu.png);
+  }
 }
 .container-hero img {
   width: 100%;
@@ -96,6 +104,9 @@ a {
 @media screen and (max-width: 576px) {
   .container-boss {
     flex-direction: column;
+  }
+  .btn6 {
+    display: none;
   }
 }
 .head {
@@ -180,7 +191,8 @@ a {
   width: 100%;
   /* gap: 10px; */
   height: 100%;
-  border: 2px sloid black;
+  border: 2px solid black;
+  justify-content: space-around;
 }
 .store-story1 {
   text-align: center;
@@ -252,4 +264,26 @@ a {
   /* .store-story2 {
     grid-template-columns: repeat(1, 1fr);
   } */
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .store-story1 {
+    display: none;
+  }
+}
+.btn8 {
+  text-align: center;
+}
+.btn-11 {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+.new-bag {
+  display: flex;
+}
+.footbar {
+  display: flex;
+  justify-content: space-between;
 }
