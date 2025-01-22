@@ -16,11 +16,15 @@ body {
 }
 .nav-container {
   display: flex;
+  margin-left: 0;
 }
 .nav-container div {
   display: flex;
   margin-top: 20px;
   gap: 15px;
+}
+.item {
+  display: flex;
 }
 .btn {
   background-color: rgb(254, 163, 1);
@@ -107,6 +111,9 @@ a {
   border-radius: 10px;
   box-shadow: 3px 3px gray;
 }
+.boy-container h1 {
+  gap: 5px;
+}
 .container-boss {
   display: flex;
 }
@@ -116,6 +123,10 @@ a {
   }
   .btn6 {
     display: none;
+  }
+  .menu-icon img {
+    display: block;
+    margin-left: 350px;
   }
 }
 .head {
@@ -192,16 +203,18 @@ a {
   border-bottom: 2px dashed gray;
   height: 100%;
   margin: 20px;
+  border-radius: 20px;
   background: url(image),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 .story {
   display: flex;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   /* gap: 10px; */
   height: 100%;
   /* border: 2px solid black; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .store-story1 {
   text-align: center;
@@ -209,6 +222,7 @@ a {
   /* height: 100%; */
   /* width: 100%; */
   margin: 10px;
+  grid-row: span 2;
   background-color: white;
   padding: 10px;
   margin-bottom: 20px;
@@ -235,7 +249,9 @@ a {
   margin-bottom: -15px;
   border-radius: 10px;
 }
-
+button:hover {
+  background-color: cadetblue;
+}
 .btn7 {
   font-size: 10px;
   margin-top: 0px;
@@ -277,7 +293,7 @@ a {
     grid-template-columns: repeat(1, 1fr);
   } */
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 892px) {
   .store-story1 {
     display: none;
   }
